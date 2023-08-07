@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Крафт Эликсиров</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="grid-container">
+        <div class="left-container">
+            <div class="zone" id="zone1">
+                <h2>Твои ресурсы</h2>
+                <textarea id="resources" rows="5" cols="40"></textarea>
+                <button onclick="uploadResources()">Закачать</button>
+            </div>
+            <div class="zone" id="zone3">
+                <h2>Остаток ресурсов</h2>
+                <table id="remainingResources">
+                </table>
+            </div>
+            <div class="zone" id="zone3">
+                <h2>Инфо</h2>
+                Управление -> Рюкзак -> Ресурсы<br>
+                Содержимое текста копируешь в текстовое поле "Твои ресурсы" и жмякаешь на "Закачать"<br>
+                <br>
+                С любовью сделано кланом <a href="https://vsmuta.com/clan/Hunters"><img src="https://vsmuta.com/images/clan/54.png?v3">Hunters</a>
+            </div>
+        </div>
+        <div class="zone" id="zone2">
+            <h2>Крафт эликсиров</h2>
+            <table id="recipes">
+                <tr>
+                    <th>Раса</th>
+                    <th>Параметры</th>
+                    <th>Ингридиенты</th>
+                    <th>Эликсиры на выходе</th>
+                    <th>Можно скрафтить</th>
+                    <th>Крафт</th>
+                    <th>Кнопки</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
